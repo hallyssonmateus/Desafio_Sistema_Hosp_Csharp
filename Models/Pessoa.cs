@@ -2,6 +2,7 @@ namespace DesafioProjetoHospedagem.Models;
 
 public class Pessoa
 {
+    // Construtores
     public Pessoa() { }
 
     public Pessoa(string nome)
@@ -15,6 +16,7 @@ public class Pessoa
         Sobrenome = sobrenome;
     }
 
+    //Definindo as variaveis
     public string Nome { get; set; }
     public string Sobrenome { get; set; }
     public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
